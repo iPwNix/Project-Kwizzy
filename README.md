@@ -15,7 +15,7 @@ At the same time this was my first project with NodeJS and had yet to discover t
 When we started this project in school the documentation of Socket.io was pretty thin so we had some trouble finding information so i have no idea if it would've even worked with the File System.
 I was one of a few who actually completed this project.
 
-There seems to be a spacing problem with the code here on github, i have no idea whats causing this because in my code editor everything seems clean anr normal, i'll try and fix it by hand here on github.
+There seems to be a spacing problem with the code here on github, i have no idea whats causing this because in my code editor everything seems clean and normal, i'll try and fix it by hand here on github.
 
 # Beschrijving / Description
 

@@ -1,0 +1,527 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+
+@font-face {
+    font-family: digitalFont;
+    src: url("../fonts/DJB Get Digital.ttf");
+}
+
+body,html
+{
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+	background: url(../imgs/app/Brickback.jpg);
+    background-attachment: repeat;
+    background-position: center;
+}
+
+#toNextQuestionButton
+{
+	display: none;
+}
+
+.pageWrapper
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+	overflow: hidden;
+
+}
+
+#joinOrCreateWrap
+{
+	display: none;
+	min-height: 100%;
+	min-width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+#nickWrapHeading
+{
+	font-family: digitalFont;
+	font-size: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-shadow: 5px 5px #000000;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+#nicknameInput
+{
+	width: 100%;
+	height: 25%;
+	min-height: 150px;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-shadow: 5px 5px #000000;
+	/*font-family: 'Oswald', sans-serif;*/
+	font-family: digitalFont;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.9);
+	border: none;
+
+	-webkit-transition: background 0.75s ease-in;
+	-moz-transition: background 0.75s ease-in;
+	-o-transition: background 0.75s ease-in;
+	transition: background 0.75s ease-in;
+}
+#nicknameInput:active,
+#nicknameInput:focus
+{
+background: rgba(0, 0, 0, 1);
+}
+
+#nicknameInputBut
+{
+	width: 90%;
+	height: 25%;
+	margin-left: 5%;
+	min-height: 150px;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-shadow: 5px 5px #000000;
+	/*font-family: 'Oswald', sans-serif;*/
+	font-family: digitalFont;
+	text-align: center;
+	background: rgba(82, 208, 83, 0.9);
+	border: none;
+	-webkit-transition: background 0.75s ease-in;
+	-moz-transition: background 0.75s ease-in;
+	-o-transition: background 0.75s ease-in;
+	transition: background 0.75s ease-in;
+}
+#nicknameInputBut:hover,
+#nicknameInputBut:active
+{
+	/*background: rgba(127, 131, 131, 1);*/	
+	background: rgba(82, 208, 83, 1);
+}
+
+/*******************************************/
+/*            JOIN OR CREATE               */
+/*******************************************/
+
+
+#welcomeMessage
+{
+position: relative;
+height: 50%;
+min-width: 100%;
+
+}
+
+#welcomeName
+{
+	font-size: 100px;
+	font-family: digitalFont;
+	text-shadow: 5px 5px #000000;
+	text-align: center;
+	color: #c00000;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#welcomeSentence
+{
+	font-size: 50px;
+	font-family: digitalFont;
+	text-shadow: 5px 5px #000000;
+	text-align: center;
+	color: #c00000;
+	margin-top: 0px;
+}
+
+#roomButtons
+{
+position: relative;
+height: 50%;
+min-width: 100%;
+}
+
+#joinARoom
+{
+	float: left;
+	margin-left: 10%;
+	width: 400px;
+	height: 150px;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-shadow: 5px 5px #c00000;
+	font-family: digitalFont;
+	text-align: center;
+	background: rgba(82, 208, 83, 0.9);
+	border: none;
+	-webkit-transition: background 0.75s ease-in;
+	-moz-transition: background 0.75s ease-in;
+	-o-transition: background 0.75s ease-in;
+	transition: background 0.75s ease-in;
+}
+#joinARoom:hover,
+#joinARoom:active
+{
+	background: rgba(82, 208, 83, 1);
+}
+
+#joinARoomDiv
+{
+	display: none;
+}
+
+#createARoom
+{
+	float: right;
+	margin-right: 10%;
+	width: 400px;
+	height: 150px;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-shadow: 5px 5px #c00000;
+	/*font-family: 'Oswald', sans-serif;*/
+	font-family: digitalFont;
+	text-align: center;
+	background: rgba(230, 119, 11, 0.9);
+	border: none;
+	-webkit-transition: background 0.75s ease-in;
+	-moz-transition: background 0.75s ease-in;
+	-o-transition: background 0.75s ease-in;
+	transition: background 0.75s ease-in;
+}
+#createARoom:hover,
+#createARoom:active
+{
+background: rgba(230, 119, 11, 1);
+}
+
+/*******************************************/
+/*               IN ROOM                   */
+/*******************************************/
+
+#inRoomDivWrap
+{
+	display: none;
+	min-height: 100%;
+	min-width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+#RoomNameHead
+{
+font-size: 100px;
+font-family: digitalFont;
+text-shadow: 5px 5px #000;
+text-align: center;
+color: #C00000;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+#selectingQuiz
+{
+	display: none;
+	width: 100%;
+	height: 125px;
+}
+#selectQuizDropdown
+{
+	height: 60%;
+	width: 100%;
+	font-family: digitalFont;
+	color: #FFFFFF;
+	text-shadow: 3px 3px #c00000;
+	text-align: center;
+	font-size: 40px;
+	border: none;
+	background: rgba(0, 0, 0, 0.8);
+
+	/*Haalt de arrow rechts van de dropdown weg */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 1px;
+	text-overflow: '';
+}
+#selectQuizDropdown > option
+{
+	border: none;
+}
+
+#quizDropdownConfirm
+{
+	height: 40%;
+	width: 100%;
+	font-family: digitalFont;
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-shadow: 2px 2px #c00000;
+	background: rgba(82, 208, 83, 0.9);
+	border: none;
+}
+#selectedQuizName
+{
+	font-size: 75px;
+	font-family: digitalFont;
+	text-shadow: 5px 5px #000;
+	text-align: center;
+	color: #C00000;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#startQuizButton
+{
+	height: 40%;
+	width: 100%;
+	font-family: digitalFont;
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-shadow: 2px 2px #c00000;
+	background: rgba(82, 208, 83, 0.9);
+	border: none;	
+}
+
+
+#usersinroom
+{
+position: absolute;
+width: 100%;
+height: 45%;
+min-height: 250px;
+color: #F6F5FB;
+bottom: 0px;
+right: 0px;
+padding-left: 0.5%;
+border-left: 2px solid #F6F5FB;
+border-bottom: 1px solid #F6F5FB;
+overflow-y: auto;	
+}
+
+/*******************************************/
+/*               IN GAME                   */
+/*******************************************/
+
+
+#inGameDivWrap
+{
+	display: none;
+	min-height: 100%;
+	min-width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+/* IN GAME TIMER */
+
+	#betweenQuestions
+		{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: 1111;
+			background: rgba(0, 0, 0, 0.8);
+			color: #FFFFFF;
+			display: none;
+			/*background: black;*/
+		}
+
+#timerBarback
+{
+	position: relative;
+	width: 100%;
+	height: 5%;
+	min-height: 60px;
+	background: #d3290f;
+}
+
+#timerBar
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #52d053;
+	-webkit-transition: width 0.75s, background 1s ease-in;
+	-moz-transition: width 0.75s, background 1s ease-in;
+	-o-transition: width 0.75s, background 1s ease-in;
+	transition: width 0.75s, background 1s ease-in;
+}
+#timerBarTime
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	top: 0;
+	text-align: center;
+	font-size: 200%;
+}
+
+
+
+
+
+
+#questionDiv
+{
+position: relative;
+min-width: 100%;
+height: 45%;
+background: blue;
+   background-repeat: no-repeat;
+   background-position: center center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+#questionDivTrans
+{
+	min-height: 100%;
+	min-width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+}
+#theQuestion
+{
+	position: relative;
+	min-width: 100%;
+	text-align: center;
+	font-size: 75px;
+	font-family: digitalFont;
+	text-shadow: 5px 5px #000;
+	text-align: center;
+	color: #C00000;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#topRow,#botRow
+{
+	position: relative;
+	height: 50%;
+	min-width: 100%;
+}
+#topRow
+{
+	top: 0;
+}
+#botRow
+{
+	bottom: 0;
+}
+
+#answersDiv
+{
+position: relative;
+min-width: 100%;
+height: 50%;
+background: green;
+}
+#answerOne,#answerTwo,#answerThree,#answerFour
+{
+position: relative;
+width: 50%;
+height: 100%;
+border: none;
+
+text-align: center;
+font-size: 30px;
+font-family: digitalFont;
+text-shadow: 2px 2px #000;
+text-align: center;
+color: #C00000;
+margin-top: 0px;
+margin-bottom: 0px;
+
+
+}
+#answerOne,#answerThree
+{
+	float: left;
+}
+#answerTwo,#answerFour
+{
+	float: right;
+}
+
+#answerOne
+{
+	background: #765898;
+}
+#answerTwo
+{
+	background: #52d053;
+}
+#answerThree
+{
+	background: #11277c;
+}
+#answerFour
+{
+	background: #e6770b;
+}
+
+
+#scoreboard
+{
+	display: none;
+	min-height: 100%;
+	min-width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+}
+#scoreboardheadDiv
+{
+	position: relative;
+	height: 25%;
+	width: 100%;
+}
+#scoreboardhead
+{
+	font-size: 100px;
+	font-family: digitalFont;
+	text-shadow: 5px 5px #000000;
+	text-align: center;
+	color: #c00000;
+	margin: 0;
+}
+
+#scores
+{
+	position: relative;
+	height: 75%;
+	width: 100%;
+	font-size: 45px;
+	font-family: digitalFont;
+	text-shadow: 5px 5px #000000;
+	text-align: center;
+	color: #c00000;
+	margin: 0;
+}
+
+
+
+
+
+/*@media only screen and (max-width: 479px) {
+
+body,html
+{
+	background: red;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+body,html
+{
+	background: blue;
+}
+
+}*/

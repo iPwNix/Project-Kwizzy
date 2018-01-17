@@ -1,0 +1,96 @@
+<html>
+<head>
+	<title>Kwizzy</title>
+	<link rel="stylesheet" type="text/css" href="public/css/mainstyle.css">
+</head>
+<body>
+<div class="pageWrapper">
+<div id="nickWrap">
+<h1 id="nickWrapHeading">Enter a Username</h1>
+<p id="nickError"></p>
+
+	<form id="setNick">
+		<input type="text" maxlength="15" autocomplete="off" id="nicknameInput" placeholder="Username"></input>
+		<input type="submit" value="Enter" id="nicknameInputBut"></input>
+	</form>
+</div>
+
+<div id="joinOrCreateWrap">
+
+<div id="welcomeMessage">
+<h1 id="welcomeName"></h1>
+<h2 id="welcomeSentence">Welcome to the party, pal!</h2>
+<h2 id="roomJoinError"></h2>
+</div>
+
+<div id="roomButtons"><!-- -->
+<button id="joinARoom">Join a Room</button>
+<div id="joinARoomDiv">
+<form id="joinARoomForm">
+	<input id="joinARoomInput" placholder="Room Name" maxlength="8" autocomplete="off"></input>
+	<input type="submit" id="roomJoin" value="Join Room"></input>
+</form>
+</div>
+
+<button id="createARoom">Create a Room</button>
+</div><!-- -->
+</div>
+
+<div id="inRoomDivWrap">
+	<h1 id="RoomNameHead"></h1>
+	<div id="selectingQuiz">
+		<select name="selectQuizDropdown" id="selectQuizDropdown">
+			
+		</select>
+		<button id="quizDropdownConfirm">Confirm</button>
+	</div>
+	<div id="usersinroom"></div>
+</div>
+
+<div id="inGameDivWrap">
+<div id="betweenQuestions">
+	<h1>Question Done!</h1>
+	<div id="timebeforenext">10 seconds before the next Question!</div>
+	<button id="toNextQuestionButton">Start Next Question!</button>
+</div>
+
+	<div id="timerBarback">
+	<div id="timerBar"></div>
+	<div id="timerBarTime">10 Seconds Remaining!</div>
+	</div>
+
+
+
+	<div id="questionDiv">
+	  <div id="questionDivTrans">
+		<div id="theQuestion"></div>
+	  </div>
+	</div>
+	<div id="answersDiv">
+		<div id="topRow">
+			<button id="answerOne"></button>
+			<button id="answerTwo"></button>	
+		</div>
+		<div id="botRow">
+			<button id="answerThree"></button>
+			<button id="answerFour"></button>
+		</div>
+	</div>
+</div>
+
+<div id="scoreboard">
+	<div id="scoreboardheadDiv">
+		<h1 id="scoreboardhead">SCOREBOARD</h1>
+	</div>
+	
+	<div id="scores">
+
+	</div>
+</div>
+
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="public/js/mainscript.js"></script>
+</body>
+</html>
